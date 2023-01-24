@@ -14,6 +14,7 @@ On formate les données (le karyotype que j'ai chargé sur circos prend des Chr_
 ```
 sed -i 's/chr2L/2L/g' roger_kdm3_pos_value.txt 
 ```
+cat roger_pics_signi.txt | sed 's/chr2L/2L/g' | sed 's/chrY/Y/g' | sed 's/chr2R/2R/g' | sed 's/chr3R/3R/g' | sed 's/chr3L/3L/g' | sed 's/chr4/4/g' | sed 's/chrX/X/g' > roger_pics_signi_formated.txt 
 
 Je sed de cette manière pour tout les chromosomes : 2L, 2R, 3R, 3L, 4 ,X et enfin Y.
 
